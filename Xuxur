@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>L7 CORE</title>
+
+<style>
+body {
+  margin: 0;
+  background: radial-gradient(circle at center, #050505, #000);
+  font-family: monospace;
+  color: #00ff9d;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box {
+  width: min(500px, 90%);
+  padding: 30px;
+  border: 1px solid #00ff9d55;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 30px #00ff9d22;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.glow {
+  text-shadow: 0 0 10px #00ff9d;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.poem {
+  margin-top: 25px;
+  color: #baffea;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.final {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 🔊 MÚSICA: Chico Buarque - O Caderno -->
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/6h_jz9ycPKM?autoplay=1&loop=1&playlist=6h_jz9ycPKM"
+frameborder="0"
+allow="autoplay">
+</iframe>
+
+<div class="box">
+
+  <div class="glow title">// L7 CORE SYSTEM ONLINE //</div>
+
+  <div class="glow" style="margin-top:10px;">
+    init: LINDUXA
+  </div>
+
+  <div class="poem">
+O amor, pra mim, nunca foi sobre grandes gestos.
+
+Foi sobre esperar sua mensagem. Sorrir quando vejo seu nome.
+Me preocupar quando você não está bem.
+
+E perceber aos poucos que o simples fato de você existir
+já torna meus dias melhores.
+  </div>
+
+  <div class="final glow">
+    Te amo, linduxa!!
+  </div>
+
+</div>
+
+</body>
+</html>

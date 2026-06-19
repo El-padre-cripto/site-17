@@ -2,39 +2,104 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>L7 System</title>
+  <title>L7 CORE</title>
+
   <style>
     body {
-      background-color: black;
-      color: #00ff88;
+      margin: 0;
+      background: radial-gradient(circle at center, #050505, #000);
       font-family: monospace;
+      color: #00ff9d;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      flex-direction: column;
+      overflow: hidden;
     }
 
     .box {
-      border: 1px solid #00ff88;
-      padding: 20px;
+      width: 500px;
+      padding: 30px;
+      border: 1px solid #00ff9d;
+      box-shadow: 0 0 25px #00ff9d33;
       text-align: center;
-      width: 300px;
+      animation: fadeIn 2s ease-in-out;
     }
 
     .glow {
-      text-shadow: 0 0 10px #00ff88;
+      text-shadow: 0 0 10px #00ff9d;
+    }
+
+    .title {
+      margin-bottom: 20px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .poem {
+      margin-top: 25px;
+      color: #baffea;
+      line-height: 1.6;
+      font-size: 14px;
+      opacity: 0;
+      animation: appear 3s ease forwards;
+      animation-delay: 1.5s;
+    }
+
+    .final {
+      margin-top: 25px;
+      font-size: 16px;
+      opacity: 0;
+      animation: appear 2s ease forwards;
+      animation-delay: 4s;
+    }
+
+    @keyframes fadeIn {
+      from { transform: scale(0.95); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes appear {
+      to { opacity: 1; }
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
     }
   </style>
 </head>
 
 <body>
-  <div class="box">
-    <p class="glow">// L7 CORE SYSTEM //</p>
-    <p>init: LINDUXA</p>
-    <p>state: LOVE_OVERFLOW</p>
-    <br>
-    <p class="glow">Te amo muito, LINDUXA</p>
+
+<div class="box">
+
+  <div class="title glow">// L7 CORE SYSTEM ONLINE //</div>
+
+  <div class="glow">
+    init: LINDUXA<span class="cursor">|</span>
   </div>
+
+  <div class="poem">
+    O amor, pra mim, nunca foi sobre grandes gestos.<br><br>
+
+    Foi sobre esperar sua mensagem. Sorrir quando vejo seu nome.<br>
+    Me preocupar quando você não está bem.<br><br>
+
+    E perceber aos poucos que o simples fato de você existir<br>
+    já torna meus dias melhores.
+  </div>
+
+  <div class="final glow">
+    Te amo, linduxa!!
+  </div>
+
+</div>
+
 </body>
 </html>
